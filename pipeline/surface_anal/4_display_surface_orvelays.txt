@@ -1,0 +1,5 @@
+freeview -f /Users/tonglab/Documents/Loic/all_mri_data/freesurfer/sub-F019_230321/surf/lh.inflated:/Users/tonglab/Documents/Loic/phantom_mri_data/analysis/loic_anal/sub-F019_230321/data/functional/localizer/run01/outputs/topUp/noB0/MapsNativeSurfs/lh_surfs/loczstat3_lh_thr3.1_surf.nii.gz:visible=1 -f /Users/tonglab/Documents/Loic/all_mri_data/freesurfer/sub-F019_230321/surf/lh.inflated:/Users/tonglab/Documents/Loic/phantom_mri_data/analysis/loic_anal/sub-F019_230321/data/functional/phantom/allRuns/outputs/topUp/noB0/phantomEnhanceSurfsNative/lh_surfs/phzstat2_lh_thr3.1_surf.nii.gz:visible=1
+
+SUBJECTS_DIR=/Users/tonglab/Documents/Loic/all_mri_data/freesurfer
+
+tksurfer sub-F019_230321 lh inflated -overlay /Users/tonglab/Documents/Loic/phantom_mri_data/analysis/loic_anal/sub-F019_230321/data/functional/localizer/run01/outputs/topUp/noB0/MapsNativeSurfs/lh_surfs/loczstat3_lh_thr3.1_surf.nii.gz -overlay overlay2.nii.gz -annot aparc.annot

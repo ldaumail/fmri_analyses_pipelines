@@ -1,0 +1,9 @@
+
+sudo apt install virtualenv
+virtualenv --python=python3 /home/tonglab/Documents/Loic/phantom_mri_data/analysis/loic_anal/sub-F019/code/pyenv
+
+source /home/tonglab/Documents/Loic/phantom_mri_data/analysis/loic_anal/sub-F019/code/pyenv/bin/activate
+
+
+sudo apt install python3-venv
+

@@ -1,0 +1,2 @@
+recon-all -subject sub-F019 -all -i /home/tonglab/Documents/Loic/phantom_mri_data/analysis/loic_anal/sub-F019/data/sourceData/NIFTI/Tong_349954.17.01.14-06-27.WIP_T1_LGN_SENSE.01.nii
+

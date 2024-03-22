@@ -1,0 +1,28 @@
+#!/bin/bash
+##################
+### PARAMETERS ###
+##################
+
+# SUBJECT ID
+export PROJ=phantom_mri_data
+export SUBJ=sub-F019
+export SESS=sess01
+
+# DIRECTORIES
+export PROJDIR=/Users/tonglab/Documents/Loic/${PROJ}
+mkdir ${PROJDIR}/analysis/loic_anal/${SUBJ}_230321/data/${SESS}
+cd ${PROJDIR}/analysis/loic_anal/${SUBJ}_230321/data/${SESS}
+DataDir=${PROJDIR}/analysis/loic_anal/${SUBJ}_230321/data
+
+# Runs and parameters of interest
+phantomRuns=(1 2 3 4 5 6)
+#1 Get Nifti bold data from pRF mapping design
+#2 Organize data into fsfast structure
+#rename nifti files
+for i in "${phantomRuns[@]}"
+do 
+mkdir -p `printf "bold/%03d" $i`
+cp `printf "$DataDir/functional/phantom/run%02d/inputs/rawData_topUp.nii.gz" $i`  `printf "$DataDir/$SESS/bold/%03d/f.nii.gz" $i` 
+done
+
+
